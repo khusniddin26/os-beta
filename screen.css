@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header
+{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: none;
+    z-index: 11;
+    padding: 12px;
+}
+
+
+header h2 
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+
+
+
+@media (max-width:1000px) 
+{
+
+
+.scren
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(122,107,32);
+    background: linear-gradient(0deg, rgba(122,107,32,1) 0%, rgba(237,175,105,1) 100%);
+}
+
+
+.scren .box1
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13rem;
+}
+
+
+.scren .box1 h1 
+{
+    position: absolute;
+    font-size: 6.6em;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+
+.scren .box1 p
+{
+    position: absolute;
+    font-size: 1.6em;
+    color: rgba(255,255,255,0.7);   
+    margin-top: 9rem;
+}
+
+
+.scren .touch1
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: -5rem;
+}
+
+
+.scren .touch1 a .tou
+{
+    width: 5px;
+    height: 100px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    animation: changeView2 linear 3s 1 alternate;
+}
+
+
+
+
+.scren .touch1 a .tou2
+{
+    width: 5px;
+    height: 250px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    animation: changeView2 linear 3s 1 alternate;
+}
+
+
+
+
+@keyframes changeView2 {
+    0%
+    {
+        box-shadow: none;
+    }
+    50%
+    {
+        background: #fff;
+        box-shadow: 0px 0px 2px 2px #fff;
+    }
+
+    100%
+    {
+        box-shadow: none;
+    }
+
+}
+
+
+
+
+
+
+
+/*******Footer********/
+
+footer 
+{
+    
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    z-index: 14;
+}
+
+
+
+footer .linee2
+{
+    position: absolute;
+    width: 60%;
+    height: 16.5px;
+    border-radius: 12px;
+    background: #fff;
+    top: 97%;
+}
+
+
+
+
+
+
+
+}
