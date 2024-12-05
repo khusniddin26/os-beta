@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+    cursor: none;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    z-index: 11;
+    padding: 12px;
+}
+
+header h2 {
+    font-size: 1em;
+    color: #fff;
+}
+
+header .clocke h3 {
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header h4 {
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media (max-width:1100px),
+(max-height:995px) {
+    .homescreen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(244, 223, 33);
+        background: linear-gradient(0deg, rgba(244, 223, 33, 1) 0%, rgba(220, 154, 0, 1) 100%);
+    }
+    .homescreen .dynamice {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        text-decoration: 5s;
+    }
+    .homescreen .dynamice p {
+        display: none;
+    }
+    /****.homescreen  .dynamice  .box1
+    {
+    
+        width: 12%;
+        height: 32px;
+        border-radius: 35px;
+        background: #444;
+        margin: 0.3rem;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+        animation: changeView3 linear 3s 1 alternate;
+    }
+*****/
+    .homescreen .dynamice .box2 {
+        width: 7%;
+        height: 32px;
+        border-radius: 35px;
+        background: rgba(0, 0, 0, 0.1);
+        margin: 0.3rem;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        animation: changeView3 linear 3s 1 alternate;
+    }
+    @keyframes changeView3 {
+        0% {
+            background: rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+        50% {
+            background: #444;
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+            background: rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .homescreen .dynamice:hover {
+        width: 70%;
+        height: 100px;
+        margin-top: 6%;
+        margin-left: 15%;
+        border-radius: 50px;
+        background: #444;
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+        text-decoration: 5s;
+    }
+    .homescreen .dynamice:hover p {
+        display: block;
+        font-size: 2em;
+        color: #fff;
+    }
+    .homescreen .dynamice:hover .box1 {
+        display: none;
+    }
+    .homescreen .dynamice:hover .box2 {
+        display: none;
+    }
+    .homescreen .downe {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+        padding: 5px;
+    }
+    .homescreen .downe .iland {
+        position: fixed;
+        width: 7px;
+        height: 80px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .homescreen .downe .iland:hover {
+        position: fixed;
+        width: 100px;
+        height: 480px;
+        display: block;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(1px);
+        border-radius: 25px;
+        z-index: 20;
+        margin-left: 2%;
+    }
+    .homescreen .downe .iland:hover .box {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: #fff;
+        border: 0.2px solid rgba(0, 0, 0, 0.08);
+        margin: 22%;
+    }
+    .homescreen .downe .iland2 {
+        /** width: 7px;
+        height: 150px;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.5);***/
+    }
+    .homescreen .downe2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -4rem;
+        padding: 5px;
+    }
+    .homescreen .downe2 .ilande {
+        /*  width: 7px;
+    height: 80px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5);*/
+    }
+    .homescreen .downe2 .ilande2 {
+        position: fixed;
+        width: 7px;
+        height: 180px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        left: 98%;
+    }
+    .homescreen .downe2 .ilande2:hover {
+        position: fixed;
+        width: 300px;
+        height: 610px;
+        display: grid;
+        grid-template-columns: 4fr 6.5em 94px;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(3px);
+        border-radius: 25px;
+        z-index: 30;
+        margin-left: -19.1rem;
+    }
+    .homescreen .downe2 .ilande2:hover .box {
+        width: 55px;
+        height: 55px;
+        border-radius: 15px;
+        background: #333;
+        border: 0.2px solid rgba(0, 0, 0, 0.08);
+        margin: 22%;
+    }
+    .homescreen #showe {
+        display: none;
+        width: 50px;
+        height: 200px;
+        background: #999;
+    }
+    .homescreen .homee {
+        display: flex;
+        justify-content: space-between;
+        padding: 45px;
+        margin-top: -6rem;
+    }
+    .homescreen .homee .appi1 {
+        width: 45%;
+        height: 170px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .homescreen .homee .appi2 {
+        width: 45%;
+        height: 370px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    /*******Footer********/
+    footer {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        z-index: 14;
+    }
+    footer .linee3 {
+        position: absolute;
+        width: 60%;
+        height: 15.5px;
+        border-radius: 12px;
+        background: #fff;
+        top: 97%;
+    }
+}
+
+@media (max-width:440px),
+(max-height:800px) {
+    header {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        z-index: 11;
+        padding: 12px;
+    }
+    header a h2 {
+        font-size: 0.8em;
+        font-weight: 600;
+        color: #222;
+    }
+    header a h2:hover {
+        color: #111;
+        font-weight: 500;
+        text-decoration: 0.3s;
+    }
+    header .clocke h3 {
+        font-size: 1.03em;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    header h4 {
+        font-size: 0.86em;
+        color: #fff;
+        font-weight: 700;
+    }
+    .homescreen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(217, 245, 255);
+        background: linear-gradient(0deg, rgba(217, 245, 255, 1) 0%, rgba(45, 11, 91, 1) 100%);
+    }
+    .homescreen .dynamice {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.6rem;
+        text-decoration: 5s;
+    }
+    .homescreen .dynamice p {
+        display: none;
+    }
+    /****.homescreen  .dynamice  .box1
+    {
+    
+        width: 12%;
+        height: 32px;
+        border-radius: 35px;
+        background: #444;
+        margin: 0.3rem;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+        animation: changeView3 linear 3s 1 alternate;
+    }
+*****/
+    .homescreen .dynamice .box2 {
+        width: 8%;
+        height: 25px;
+        border-radius: 35px;
+        background: rgba(0, 0, 0, 0.1);
+        margin: 0.3rem;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        animation: changeView3 linear 3s 1 alternate;
+    }
+    @keyframes changeView3 {
+        0% {
+            background: rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+        50% {
+            background: #444;
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+            background: rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .homescreen .dynamice:hover {
+        width: 70%;
+        height: 100px;
+        margin-top: 6%;
+        margin-left: 15%;
+        border-radius: 50px;
+        background: #444;
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+        text-decoration: 5s;
+    }
+    .homescreen .dynamice:hover p {
+        display: block;
+        font-size: 2em;
+        color: #fff;
+    }
+    .homescreen .dynamice:hover .box1 {
+        display: none;
+    }
+    .homescreen .dynamice:hover .box2 {
+        display: none;
+    }
+    .homescreen .downe {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        padding: 5px;
+    }
+    .homescreen .downe .iland {
+        position: fixed;
+        width: 7px;
+        height: 80px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        margin-top: rem;
+    }
+    .homescreen .downe .iland:hover {
+        position: fixed;
+        width: 80px;
+        height: 460px;
+        display: block;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(2px);
+        border-radius: 25px;
+        z-index: 20;
+        margin-left: 2%;
+    }
+    .homescreen .downe .iland:hover .box {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.7);
+        border: 0.2px solid rgba(0, 0, 0, 0.08);
+        margin: 22%;
+    }
+    .homescreen .downe .iland2 {
+        /** width: 7px;
+        height: 150px;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.5);***/
+    }
+    .homescreen .downe2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -2rem;
+        padding: 5px;
+    }
+    .homescreen .downe2 .ilande {
+        /*  width: 7px;
+    height: 80px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5);*/
+    }
+    .homescreen .downe2 .ilande2 {
+        position: fixed;
+        width: 7px;
+        height: 150px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        left: 97.5%;
+    }
+    .homescreen .downe2 .ilande2:hover {
+        position: fixed;
+        width: 300px;
+        height: 340px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+        gap: 5px 5px;
+        grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . .";
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(3px);
+        border-radius: 25px;
+        z-index: 30;
+        margin-left: -19.1rem;
+    }
+    .homescreen .downe2 .ilande2:hover .box {
+        width: 45px;
+        height: 45px;
+        border-radius: 15px;
+        background: #333;
+        border: 0.2px solid rgba(0, 0, 0, 0.08);
+        margin: 18%;
+    }
+    .homescreen #showe {
+        display: none;
+        width: 50px;
+        height: 200px;
+        background: #999;
+    }
+    .homescreen .homee {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px;
+        margin-top: 11rem;
+    }
+    .homescreen .homee .appi1 {
+        width: 45%;
+        height: 260px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .homescreen .homee .appi2 {
+        width: 45%;
+        height: 240px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    /*******Footer********/
+    footer {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        z-index: 14;
+    }
+    footer .linee3 {
+        position: absolute;
+        width: 60%;
+        height: 15.5px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.8);
+        top: 97%;
+    }
+}
+
+@media (max-width:380px),
+(max-height:700px) {
+    header .clocke h3 {
+        font-size: 0.9em;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    header h4 {
+        font-size: 0.8em;
+        color: #fff;
+        font-weight: 700;
+    }
+    .homescreen .homee {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px;
+        margin-top: -1rem;
+    }
+    .homescreen .homee .appi1 {
+        width: 45%;
+        height: 260px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .homescreen .homee .appi2 {
+        width: 45%;
+        height: 240px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    /*******Footer********/
+    footer {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        z-index: 14;
+    }
+    footer .linee3 {
+        position: absolute;
+        width: 60%;
+        height: 13.5px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.8);
+        top: 97%;
+    }
+}
+
+@media (max-width:330px),
+(max-height:615px) {
+    header .clocke h3 {
+        font-size: 0.8em;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    header h4 {
+        font-size: 0.7em;
+        color: #fff;
+        font-weight: 700;
+    }
+    .homescreen .homee {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        margin-top: -1rem;
+    }
+    .homescreen .homee .appi1 {
+        width: 120px;
+        height: 260px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .homescreen .homee .appi2 {
+        width: 120px;
+        height: 240px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    /*******Footer********/
+    footer {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        z-index: 14;
+    }
+    footer .linee3 {
+        position: absolute;
+        width: 60%;
+        height: 12.5px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.8);
+        top: 97%;
+    }
+}
